@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Nevermore Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Nevermore</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Maid.html">Maid</a></li>
+  <li><a href="../classes/Signal.html">Signal</a></li>
+  <li><strong>AnimationPlayer</strong></li>
+  <li><a href="../classes/ClipCharacters.html">ClipCharacters</a></li>
+  <li><a href="../classes/CameraState.html">CameraState</a></li>
+  <li><a href="../classes/CameraStateTweener.html">CameraStateTweener</a></li>
+  <li><a href="../classes/ValueObject.html">ValueObject</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Promise.html">Promise</a></li>
+  <li><a href="../modules/Nevermore.html">Nevermore</a></li>
+  <li><a href="../modules/CharacterUtil.html">CharacterUtil</a></li>
+  <li><a href="../modules/DataStoreRetry.html">DataStoreRetry</a></li>
+  <li><a href="../modules/CameraStack.html">CameraStack</a></li>
+  <li><a href="../modules/Table.html">Table</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>AnimationPlayer</code></h1>
+<p>Makes playing and loading tracks into a humanoid easy</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:new">AnimationPlayer:new (Humanoid)</a></td>
+	<td class="summary">Constructs a new animation player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:WithAnimation">AnimationPlayer:WithAnimation (Animation)</a></td>
+	<td class="summary">Adds an animation to use</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:AddAnimation">AnimationPlayer:AddAnimation (Name, AnimationId)</a></td>
+	<td class="summary">Adds an animation to play</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:GetTrack">AnimationPlayer:GetTrack (TrackName)</a></td>
+	<td class="summary">Returns a track in the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:PlayTrack">AnimationPlayer:PlayTrack (TrackName, FadeTime, Weight, Speed, StopFadeTime)</a></td>
+	<td class="summary">Plays a track</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:StopTrack">AnimationPlayer:StopTrack (TrackName, FadeTime)</a></td>
+	<td class="summary">Stops a track from being played</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AnimationPlayer:StopAllTracks">AnimationPlayer:StopAllTracks (FadeTime)</a></td>
+	<td class="summary">Stops all tracks playing</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "AnimationPlayer:new"></a>
+    <strong>AnimationPlayer:new (Humanoid)</strong>
+    </dt>
+    <dd>
+    Constructs a new animation player
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Humanoid</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:WithAnimation"></a>
+    <strong>AnimationPlayer:WithAnimation (Animation)</strong>
+    </dt>
+    <dd>
+    Adds an animation to use
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Animation</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:AddAnimation"></a>
+    <strong>AnimationPlayer:AddAnimation (Name, AnimationId)</strong>
+    </dt>
+    <dd>
+    Adds an animation to play
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Name</span>
+
+
+
+        </li>
+        <li><span class="parameter">AnimationId</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:GetTrack"></a>
+    <strong>AnimationPlayer:GetTrack (TrackName)</strong>
+    </dt>
+    <dd>
+    Returns a track in the player
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">TrackName</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:PlayTrack"></a>
+    <strong>AnimationPlayer:PlayTrack (TrackName, FadeTime, Weight, Speed, StopFadeTime)</strong>
+    </dt>
+    <dd>
+    Plays a track
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">TrackName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Name of the track to play
+        </li>
+        <li><span class="parameter">FadeTime</span>
+            <span class="types">optional <span class="type">number</span></span>
+         How much time it will take to transition into the animation.
+        </li>
+        <li><span class="parameter">Weight</span>
+            <span class="types">optional <span class="type">number</span></span>
+         Acts as a multiplier for the offsets and rotations of the playing animation
+ This parameter is extremely unstable.
+ Any parameter higher than 1.5 will result in very shaky motion, and any parameter higher '
+ than 2 will almost always result in NAN errors. Use with caution.
+        </li>
+        <li><span class="parameter">Speed</span>
+            <span class="types">optional <span class="type">number</span></span>
+         The time scale of the animation. <br/>
+ Setting this to 2 will make the animation 2x faster, and setting it to 0.5 will make it
+ run 2x slower.
+        </li>
+        <li><span class="parameter">StopFadeTime</span>
+            <span class="types">optional <span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:StopTrack"></a>
+    <strong>AnimationPlayer:StopTrack (TrackName, FadeTime)</strong>
+    </dt>
+    <dd>
+    Stops a track from being played
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">TrackName</span>
+
+
+
+        </li>
+        <li><span class="parameter">FadeTime</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AnimationPlayer:StopAllTracks"></a>
+    <strong>AnimationPlayer:StopAllTracks (FadeTime)</strong>
+    </dt>
+    <dd>
+    Stops all tracks playing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">FadeTime</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2017-12-10 19:37:43 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -32,13 +32,19 @@
 
 <h2>Contents</h2>
 <ul>
-<li><a href="#Functions">Functions</a></li>
+<li><a href="#Modules_in_Roblox">Modules in Roblox </a></li>
+<li><a href="#Best_practices">Best practices </a></li>
 </ul>
 
 
+<h2>Topics</h2>
+<ul class="">
+  <li><strong>Adding modules</strong></li>
+  <li><a href="../topics/02_usage.md.html">Usage</a></li>
+</ul>
 <h2>Modules</h2>
 <ul class="nowrap">
-  <li><strong>Promise</strong></li>
+  <li><a href="../modules/Promise.html">Promise</a></li>
   <li><a href="../modules/Nevermore.html">Nevermore</a></li>
   <li><a href="../modules/CharacterUtil.html">CharacterUtil</a></li>
   <li><a href="../modules/DataStoreRetry.html">DataStoreRetry</a></li>
@@ -55,87 +61,35 @@
   <li><a href="../classes/CameraStateTweener.html">CameraStateTweener</a></li>
   <li><a href="../classes/ValueObject.html">ValueObject</a></li>
 </ul>
-<h2>Topics</h2>
-<ul class="">
-  <li><a href="../topics/01_adding_modules.md.html">Adding modules</a></li>
-  <li><a href="../topics/02_usage.md.html">Usage</a></li>
-</ul>
 
 </div>
 
 <div id="content">
 
-<h1>Module <code>Promise</code></h1>
-<p>Promises, but without error handling as this screws with stack traces, using Roblox signals</p>
-<p>
 
-</p>
+<h1>Adding modules</h1>
+<p>Much of Nevermore's value is being able to reuse code and using it to load your own modules.</p>
 
+<p><a name="Modules_in_Roblox"></a></p>
+<h2>Modules in Roblox</h2>
+<p>Modules are of class <code>ModulesScript</code> and are stored in the <code>ServerScriptService.Nevermore</code>. </p>
 
-<h2><a href="#Functions">Functions</a></h2>
-<table class="function_list">
-	<tr>
-	<td class="name" nowrap><a href="#Promisify">Promisify (Value)</a></td>
-	<td class="summary">Modifies values into promises</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Resolve">Resolve (Value)</a></td>
-	<td class="summary">Resolves a promise</td>
-	</tr>
-</table>
+<ul>
+    <li>Modules are loaded by name, case sensitive</li>
+    <li>Modules with the word "Server" (case insensitive) in them at any point will not be replicated to the client</li>
+    <li>Folders are used purely for organization and do not affect loading</li>
+    <li>Children underneath a module that are not a module will be replicated relatively to their parent</li>
+</ul>
 
-<br/>
-<br/>
+<p><a name="Best_practices"></a></p>
+<h2>Best practices</h2>
 
+<ul>
+    <li>Modules should not load on yield</li>
+    <li>Modules should not hold state</li>
+    <li>Document using Nevermore's specified style</li>
+</ul>
 
-    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
-
-    <dl class="function">
-    <dt>
-    <a name = "Promisify"></a>
-    <strong>Promisify (Value)</strong>
-    </dt>
-    <dd>
-    Modifies values into promises
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Value</span>
-
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "Resolve"></a>
-    <strong>Resolve (Value)</strong>
-    </dt>
-    <dd>
-    Resolves a promise
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Value</span>
-
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-</dl>
 
 
 </div> <!-- id="content" -->

@@ -1,282 +1,293 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<head>
-    <title>Nevermore Documentation</title>
-    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
-</head>
-<body>
 
-<div id="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nevermore Reference</title>
 
-<div id="product">
-	<div id="product_logo"></div>
-	<div id="product_name"><big><b></b></big></div>
-	<div id="product_description"></div>
-</div> <!-- id="product" -->
-
-
-<div id="main">
-
-
-<!-- Menu -->
-
-<div id="navigation">
-<br/>
-<h1>Nevermore</h1>
-
-<ul>
-  <li><a href="../index.html">Index</a></li>
-</ul>
-
-<h2>Contents</h2>
-<ul>
-<li><a href="#Functions">Functions</a></li>
-</ul>
-
-
-<h2>Modules</h2>
-<ul class="nowrap">
-  <li><a href="../modules/Promise.html">Promise</a></li>
-  <li><a href="../modules/Nevermore.html">Nevermore</a></li>
-  <li><a href="../modules/CharacterUtil.html">CharacterUtil</a></li>
-  <li><a href="../modules/DataStoreRetry.html">DataStoreRetry</a></li>
-  <li><strong>CameraStack</strong></li>
-  <li><a href="../modules/Table.html">Table</a></li>
-</ul>
-<h2>Classes</h2>
-<ul class="nowrap">
-  <li><a href="../classes/Maid.html">Maid</a></li>
-  <li><a href="../classes/Signal.html">Signal</a></li>
-  <li><a href="../classes/AnimationPlayer.html">AnimationPlayer</a></li>
-  <li><a href="../classes/ClipCharacters.html">ClipCharacters</a></li>
-  <li><a href="../classes/CameraState.html">CameraState</a></li>
-  <li><a href="../classes/CameraStateTweener.html">CameraStateTweener</a></li>
-  <li><a href="../classes/ValueObject.html">ValueObject</a></li>
-</ul>
-<h2>Topics</h2>
-<ul class="">
-  <li><a href="../topics/01_adding_modules.md.html">Adding modules</a></li>
-  <li><a href="../topics/02_usage.md.html">Usage</a></li>
-</ul>
-
-</div>
-
-<div id="content">
-
-<h1>Module <code>CameraStack</code></h1>
-<p>Holds camera states and allows for the last camera state to be retrieved.</p>
-<p> Also
+    <!-- Bootstrap CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ -->    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+  </head>
+  <body>
+    <div class="ref-container">
+      <div class="ref-box">
+        <div class="header">
+            <h1><span class="api-module-icon"></span>CameraStack</h1>
+          <span class="header-items">
+<!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
+ -->            <a id="return-link" href="/api">Back to hierarchy<span class="api-hierarchy-icon"></span></a>
+          </span>
+        </div>
+          <div class="box-content">
+            <p>Holds camera states and allows for the last camera state to be retrieved.</p>
+            <p> Also
  initializes an impulse and default camera as the bottom of the stack. Is a singleton.</p>
 
+            <!-- Module see -->
+
+            <!-- Module usage -->
+
+
+            <!-- Summary -->
+                <h4>Functions</h4>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>Functions</th>
+                    <th>Description</th>
+                  </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#PrintCameraStack">PrintCameraStack()</a></td>
+                      </td>
+                      <td class="api-summary">Outputs the camera stack</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetDefaultCamera">GetDefaultCamera()</a></td>
+                      </td>
+                      <td class="api-summary">Returns the default camera</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetImpulseCamera">GetImpulseCamera()</a></td>
+                      </td>
+                      <td class="api-summary">Returns the impulse camera.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetRawDefaultCamera">GetRawDefaultCamera()</a></td>
+                      </td>
+                      <td class="api-summary">Returns the default camera without any impulse cameras</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetTopState">GetTopState()</a></td>
+                      </td>
+                      <td class="api-summary">Retrieves the top state off the stack</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetNewStateBelow">GetNewStateBelow()</a></td>
+                      </td>
+                      <td class="api-summary">Returns a new camera state that retrieves the state below its set state</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetIndex">GetIndex(State)</a></td>
+                      </td>
+                      <td class="api-summary">Retrieves the index of a state</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#Remove">Remove(State)</a></td>
+                      </td>
+                      <td class="api-summary">Removes the state from the stack</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#Add">Add(State)</a></td>
+                      </td>
+                      <td class="api-summary">Adds a state to the stack</td>
+                    </tr>
+                </table>
 
-<h2><a href="#Functions">Functions</a></h2>
-<table class="function_list">
-	<tr>
-	<td class="name" nowrap><a href="#PrintCameraStack">PrintCameraStack ()</a></td>
-	<td class="summary">Outputs the camera stack</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetDefaultCamera">GetDefaultCamera ()</a></td>
-	<td class="summary">Returns the default camera</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetImpulseCamera">GetImpulseCamera ()</a></td>
-	<td class="summary">Returns the impulse camera.</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetRawDefaultCamera">GetRawDefaultCamera ()</a></td>
-	<td class="summary">Returns the default camera without any impulse cameras</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetTopState">GetTopState ()</a></td>
-	<td class="summary">Retrieves the top state off the stack</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetNewStateBelow">GetNewStateBelow ()</a></td>
-	<td class="summary">Returns a new camera state that retrieves the state below its set state</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetIndex">GetIndex (State)</a></td>
-	<td class="summary">Retrieves the index of a state</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Remove">Remove (State)</a></td>
-	<td class="summary">Removes the state from the stack</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Add">Add (State)</a></td>
-	<td class="summary">Adds a state to the stack</td>
-	</tr>
-</table>
+          <!-- Raw content -->
+          <!-- Currently works for both Functions and Tables. The params field either contains
+          function parameters or table fields.
+          -->
+          <div class="member-descriptions">
+              <h2 class="section-header "><a name="Functions"></a>Functions</h2>
 
-<br/>
-<br/>
 
+              <!-- Document module -->
 
-    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+              <!-- Document actual items -->
+                <div>
+                  <h3><span class="api-functions-icon"></span>PrintCameraStack()</h3>
+                    <p>Outputs the camera stack</p>
+                  <p>
 
-    <dl class="function">
-    <dt>
-    <a name = "PrintCameraStack"></a>
-    <strong>PrintCameraStack ()</strong>
-    </dt>
-    <dd>
-    Outputs the camera stack
 
+                  <!-- Params -->
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetDefaultCamera()</h3>
+                    <p>Returns the default camera</p>
+                  <p>
 
 
-</dd>
-    <dt>
-    <a name = "GetDefaultCamera"></a>
-    <strong>GetDefaultCamera ()</strong>
-    </dt>
-    <dd>
-    Returns the default camera
+                  <!-- Params -->
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetImpulseCamera()</h3>
+                    <p>Returns the impulse camera.</p>
+                  <p>
 
 
+                  <!-- Params -->
 
-</dd>
-    <dt>
-    <a name = "GetImpulseCamera"></a>
-    <strong>GetImpulseCamera ()</strong>
-    </dt>
-    <dd>
-    Returns the impulse camera.  Useful for adding camera shake
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetRawDefaultCamera()</h3>
+                    <p>Returns the default camera without any impulse cameras</p>
+                  <p>
 
 
+                  <!-- Params -->
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
-</dd>
-    <dt>
-    <a name = "GetRawDefaultCamera"></a>
-    <strong>GetRawDefaultCamera ()</strong>
-    </dt>
-    <dd>
-    Returns the default camera without any impulse cameras
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetTopState()</h3>
+                    <p>Retrieves the top state off the stack</p>
+                  <p>
 
 
+                  <!-- Params -->
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
-</dd>
-    <dt>
-    <a name = "GetTopState"></a>
-    <strong>GetTopState ()</strong>
-    </dt>
-    <dd>
-    Retrieves the top state off the stack
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetNewStateBelow()</h3>
+                    <p>Returns a new camera state that retrieves the state below its set state</p>
+                  <p>
 
 
+                  <!-- Params -->
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
 
-</dd>
-    <dt>
-    <a name = "GetNewStateBelow"></a>
-    <strong>GetNewStateBelow ()</strong>
-    </dt>
-    <dd>
-    Returns a new camera state that retrieves the state below its set state
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetIndex(State)</h3>
+                    <p>Retrieves the index of a state</p>
+                  <p>
 
 
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">State</span>
 
 
 
 
 
-</dd>
-    <dt>
-    <a name = "GetIndex"></a>
-    <strong>GetIndex (State)</strong>
-    </dt>
-    <dd>
-    Retrieves the index of a state
+                          </li>
+                    </ul>
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">State</span>
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>Remove(State)</h3>
+                    <p>Removes the state from the stack</p>
+                  <p>
 
-        </li>
-    </ul>
 
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">State</span>
 
 
 
 
-</dd>
-    <dt>
-    <a name = "Remove"></a>
-    <strong>Remove (State)</strong>
-    </dt>
-    <dd>
-    Removes the state from the stack
 
+                          </li>
+                    </ul>
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">State</span>
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
 
-        </li>
-    </ul>
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>Add(State)</h3>
+                    <p>Adds a state to the stack</p>
+                  <p>
 
 
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">State</span>
 
 
 
-</dd>
-    <dt>
-    <a name = "Add"></a>
-    <strong>Add (State)</strong>
-    </dt>
-    <dd>
-    Adds a state to the stack
 
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">State</span>
+                          </li>
+                    </ul>
 
+                  <!-- returns -->
+                  <!-- Raises -->
 
+                  <!-- Item usage -->
 
-        </li>
-    </ul>
 
+                </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-</dd>
-</dl>
-
-
-</div> <!-- id="content" -->
-</div> <!-- id="main" -->
-<div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2017-12-10 20:01:27 </i>
-</div> <!-- id="about" -->
-</div> <!-- id="container" -->
-</body>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="/api">Main</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://www.roblox.com/">Roblox</a></li>
+        </ul>
+      </div>
+      <span>Style is totally not a blatant <a href="http://qt-project.org/">Qt Project</a> rip-off and <a href="https://anaminus.github.io/api">Anaminus API</a> ripoff</span>
+    </footer>
+  </body>
 </html>

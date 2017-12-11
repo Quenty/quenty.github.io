@@ -1,161 +1,150 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<head>
-    <title>Nevermore Documentation</title>
-    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
-</head>
-<body>
 
-<div id="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nevermore Reference</title>
 
-<div id="product">
-	<div id="product_logo"></div>
-	<div id="product_name"><big><b></b></big></div>
-	<div id="product_description"></div>
-</div> <!-- id="product" -->
-
-
-<div id="main">
-
-
-<!-- Menu -->
-
-<div id="navigation">
-<br/>
-<h1>Nevermore</h1>
-
-<ul>
-  <li><a href="../index.html">Index</a></li>
-</ul>
-
-<h2>Contents</h2>
-<ul>
-<li><a href="#Functions">Functions</a></li>
-</ul>
-
-
-<h2>Modules</h2>
-<ul class="nowrap">
-  <li><a href="../modules/Promise.html">Promise</a></li>
-  <li><a href="../modules/Nevermore.html">Nevermore</a></li>
-  <li><strong>CharacterUtil</strong></li>
-  <li><a href="../modules/DataStoreRetry.html">DataStoreRetry</a></li>
-  <li><a href="../modules/CameraStack.html">CameraStack</a></li>
-  <li><a href="../modules/Table.html">Table</a></li>
-</ul>
-<h2>Classes</h2>
-<ul class="nowrap">
-  <li><a href="../classes/Maid.html">Maid</a></li>
-  <li><a href="../classes/Signal.html">Signal</a></li>
-  <li><a href="../classes/AnimationPlayer.html">AnimationPlayer</a></li>
-  <li><a href="../classes/ClipCharacters.html">ClipCharacters</a></li>
-  <li><a href="../classes/CameraState.html">CameraState</a></li>
-  <li><a href="../classes/CameraStateTweener.html">CameraStateTweener</a></li>
-  <li><a href="../classes/ValueObject.html">ValueObject</a></li>
-</ul>
-<h2>Topics</h2>
-<ul class="">
-  <li><a href="../topics/01_adding_modules.md.html">Adding modules</a></li>
-  <li><a href="../topics/02_usage.md.html">Usage</a></li>
-</ul>
-
-</div>
-
-<div id="content">
-
-<h1>Module <code>CharacterUtil</code></h1>
-<p>General character utility code.</p>
-<p>
+    <!-- Bootstrap CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ -->    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+  </head>
+  <body>
+    <div class="ref-container">
+      <div class="ref-box">
+        <div class="header">
+            <h1><span class="api-module-icon"></span>CharacterUtil</h1>
+          <span class="header-items">
+<!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
+ -->            <a id="return-link" href="/api">Back to hierarchy<span class="api-hierarchy-icon"></span></a>
+          </span>
+        </div>
+          <div class="box-content">
+            <p>General character utility code.</p>
+            <p>
 
 </p>
 
+            <!-- Module see -->
 
-<h2><a href="#Functions">Functions</a></h2>
-<table class="function_list">
-	<tr>
-	<td class="name" nowrap><a href="#GetHumanoid">GetHumanoid (Descendant)</a></td>
-	<td class="summary">Retrieves a humanomid from a descendant (Players only).</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#GetPlayerFromCharacter">GetPlayerFromCharacter (Descendant)</a></td>
-	<td class="summary">Returns the Player and Character that a descendent is part of, if it is part of one.</td>
-	</tr>
-</table>
-
-<br/>
-<br/>
+            <!-- Module usage -->
 
 
-    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+            <!-- Summary -->
+                <h4>Functions</h4>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>Functions</th>
+                    <th>Description</th>
+                  </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetHumanoid">GetHumanoid(Descendant)</a></td>
+                      </td>
+                      <td class="api-summary">Retrieves a humanomid from a descendant (Players only).</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="api-member-name"><a href="#GetPlayerFromCharacter">GetPlayerFromCharacter(Descendant)</a></td>
+                      </td>
+                      <td class="api-summary">Returns the Player and Character that a descendent is part of, if it is part of one.</td>
+                    </tr>
+                </table>
 
-    <dl class="function">
-    <dt>
-    <a name = "GetHumanoid"></a>
-    <strong>GetHumanoid (Descendant)</strong>
-    </dt>
-    <dd>
-    Retrieves a humanomid from a descendant (Players only).
+          <!-- Raw content -->
+          <!-- Currently works for both Functions and Tables. The params field either contains
+          function parameters or table fields.
+          -->
+          <div class="member-descriptions">
+              <h2 class="section-header "><a name="Functions"></a>Functions</h2>
 
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Descendant</span>
-         The child you're searching up from. Really, this is for weapon scripts.
-        </li>
-    </ul>
+              <!-- Document module -->
 
-    <h3>Returns:</h3>
-    <ol>
+              <!-- Document actual items -->
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetHumanoid(Descendant)</h3>
+                    <p>Retrieves a humanomid from a descendant (Players only).</p>
+                  <p>
 
-         A humanoid in the parent structure if it can find it. Intended to be used in</p>
+
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Descendant</span>
+                             The child you're searching up from. Really, this is for weapon scripts.
+
+
+                          </li>
+                    </ul>
+
+                  <!-- returns -->
+                    <h4>Returns:</h4>
+                    <ol>
+                          <li>
+                             A humanoid in the parent structure if it can find it. Intended to be used in</p>
 <pre><code> workspace  only. Useful for weapon scripts, and all that, especially to work on non
  player targets. Will scan *up* to workspace . If workspace   has a humanoid in it, it
  won't find it.
 </code></pre>
 <p> Will work even if there are non-humanoid objects named "Humanoid" However, only works on
  objects named "Humanoid" (this is intentional)
-    </ol>
+                          </li>
+                    </ol>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
 
 
+                </div>
+                <div>
+                  <h3><span class="api-functions-icon"></span>GetPlayerFromCharacter(Descendant)</h3>
+                    <p>Returns the Player and Character that a descendent is part of, if it is part of one.</p>
+                  <p>
 
 
-</dd>
-    <dt>
-    <a name = "GetPlayerFromCharacter"></a>
-    <strong>GetPlayerFromCharacter (Descendant)</strong>
-    </dt>
-    <dd>
-    Returns the Player and Character that a descendent is part of, if it is part of one.
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Descendant</span>
+                             A child of the potential character.
 
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Descendant</span>
-         A child of the potential character.
-        </li>
-    </ul>
+                          </li>
+                    </ul>
 
-    <h3>Returns:</h3>
-    <ol>
+                  <!-- returns -->
+                    <h4>Returns:</h4>
+                    <ol>
+                          <li>
+                            The character found.
+                          </li>
+                    </ol>
+                  <!-- Raises -->
 
-        The character found.
-    </ol>
-
-
-
-
-</dd>
-</dl>
+                  <!-- Item usage -->
 
 
-</div> <!-- id="content" -->
-</div> <!-- id="main" -->
-<div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2017-12-10 20:01:27 </i>
-</div> <!-- id="about" -->
-</div> <!-- id="container" -->
-</body>
+                </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <ul>
+          <li><a href="/api">Main</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://www.roblox.com/">Roblox</a></li>
+        </ul>
+      </div>
+      <span>Style is totally not a blatant <a href="http://qt-project.org/">Qt Project</a> rip-off and <a href="https://anaminus.github.io/api">Anaminus API</a> ripoff</span>
+    </footer>
+  </body>
 </html>

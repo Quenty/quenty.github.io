@@ -1,257 +1,273 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<head>
-    <title>Nevermore Documentation</title>
-    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
-</head>
-<body>
 
-<div id="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nevermore Reference</title>
 
-<div id="product">
-	<div id="product_logo"></div>
-	<div id="product_name"><big><b></b></big></div>
-	<div id="product_description"></div>
-</div> <!-- id="product" -->
-
-
-<div id="main">
-
-
-<!-- Menu -->
-
-<div id="navigation">
-<br/>
-<h1>Nevermore</h1>
-
-<ul>
-  <li><a href="../index.html">Index</a></li>
-</ul>
-
-<h2>Contents</h2>
-<ul>
-<li><a href="#Methods">Methods</a></li>
-<li><a href="#Metamethods">Metamethods</a></li>
-</ul>
-
-
-<h2>Classes</h2>
-<ul class="nowrap">
-  <li><strong>Maid</strong></li>
-  <li><a href="../classes/Signal.html">Signal</a></li>
-  <li><a href="../classes/AnimationPlayer.html">AnimationPlayer</a></li>
-  <li><a href="../classes/ClipCharacters.html">ClipCharacters</a></li>
-  <li><a href="../classes/CameraState.html">CameraState</a></li>
-  <li><a href="../classes/CameraStateTweener.html">CameraStateTweener</a></li>
-  <li><a href="../classes/ValueObject.html">ValueObject</a></li>
-</ul>
-<h2>Modules</h2>
-<ul class="nowrap">
-  <li><a href="../modules/Promise.html">Promise</a></li>
-  <li><a href="../modules/Nevermore.html">Nevermore</a></li>
-  <li><a href="../modules/CharacterUtil.html">CharacterUtil</a></li>
-  <li><a href="../modules/DataStoreRetry.html">DataStoreRetry</a></li>
-  <li><a href="../modules/CameraStack.html">CameraStack</a></li>
-  <li><a href="../modules/Table.html">Table</a></li>
-</ul>
-<h2>Topics</h2>
-<ul class="">
-  <li><a href="../topics/01_adding_modules.md.html">Adding modules</a></li>
-  <li><a href="../topics/02_usage.md.html">Usage</a></li>
-</ul>
-
-</div>
-
-<div id="content">
-
-<h1>Class <code>Maid</code></h1>
-<p>Manages the cleaning of events and other things.</p>
-<p>
+    <!-- Bootstrap CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ -->    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+  </head>
+  <body>
+    <div class="ref-container">
+      <div class="ref-box">
+        <div class="header">
+            <h1><span class="api-class-icon"></span>Maid</h1>
+          <span class="header-items">
+<!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
+ -->            <a id="return-link" href="/api">Back to hierarchy<span class="api-hierarchy-icon"></span></a>
+          </span>
+        </div>
+          <div class="box-content">
+            <p>Manages the cleaning of events and other things.</p>
+            <p>
  Useful for encapsulating state and make deconstructors easy</p>
 
+            <!-- Module see -->
+              <h4>See also</h4>
+              <ul>
+                  <li><a href="../classes/Signal.html#">Signal</a></li>
+              </ul>
 
-<h2><a href="#Methods">Methods</a></h2>
-<table class="function_list">
-	<tr>
-	<td class="name" nowrap><a href="#Maid:new">Maid:new ()</a></td>
-	<td class="summary">Returns a new Maid object</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Maid:GiveTask">Maid:GiveTask (Task)</a></td>
-	<td class="summary">Same as indexing, but uses an incremented number as a key.</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Maid:DoCleaning">Maid:DoCleaning ()</a></td>
-	<td class="summary">Cleans up all tasks.</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Maid:Destroy">Maid:Destroy ()</a></td>
-	<td class="summary">Alias for DoCleaning()</td>
-	</tr>
-</table>
-<h2><a href="#Metamethods">Metamethods</a></h2>
-<table class="function_list">
-	<tr>
-	<td class="name" nowrap><a href="#Maid:__index">Maid:__index (Index)</a></td>
-	<td class="summary">Returns Maid[key] if not part of Maid metatable</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#Maid:__newindex">Maid:__newindex (Index, NewTask)</a></td>
-	<td class="summary">Add a task to clean up</td>
-	</tr>
-</table>
-
-<br/>
-<br/>
+            <!-- Module usage -->
 
 
-    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+            <!-- Summary -->
+                <h4>Methods</h4>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>Methods</th>
+                    <th>Description</th>
+                  </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:new">Maid:new()</a></td>
+                      </td>
+                      <td class="api-summary">Returns a new Maid object</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:GiveTask">Maid:GiveTask(Task)</a></td>
+                      </td>
+                      <td class="api-summary">Same as indexing, but uses an incremented number as a key.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:DoCleaning">Maid:DoCleaning()</a></td>
+                      </td>
+                      <td class="api-summary">Cleans up all tasks.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:Destroy">Maid:Destroy()</a></td>
+                      </td>
+                      <td class="api-summary">Alias for DoCleaning()</td>
+                    </tr>
+                </table>
+                <h4>Metamethods</h4>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>Metamethods</th>
+                    <th>Description</th>
+                  </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-metamethods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:__index">Maid:__index(Index)</a></td>
+                      </td>
+                      <td class="api-summary">Returns Maid[key] if not part of Maid metatable</td>
+                    </tr>
+                    <tr>
+                      <td class="col-icon"><span class="api-metamethods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Maid:__newindex">Maid:__newindex(Index, NewTask)</a></td>
+                      </td>
+                      <td class="api-summary">Add a task to clean up</td>
+                    </tr>
+                </table>
 
-    <dl class="function">
-    <dt>
-    <a name = "Maid:new"></a>
-    <strong>Maid:new ()</strong>
-    </dt>
-    <dd>
-    Returns a new Maid object
-
-
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "Maid:GiveTask"></a>
-    <strong>Maid:GiveTask (Task)</strong>
-    </dt>
-    <dd>
-    Same as indexing, but uses an incremented number as a key.
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Task</span>
-         An item to clean
-        </li>
-    </ul>
-
-    <h3>Returns:</h3>
-    <ol>
-
-        int TaskId
-    </ol>
-
-
-
-
-</dd>
-    <dt>
-    <a name = "Maid:DoCleaning"></a>
-    <strong>Maid:DoCleaning ()</strong>
-    </dt>
-    <dd>
-    Cleans up all tasks.
-
-
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "Maid:Destroy"></a>
-    <strong>Maid:Destroy ()</strong>
-    </dt>
-    <dd>
-    Alias for DoCleaning()
+          <!-- Raw content -->
+          <!-- Currently works for both Functions and Tables. The params field either contains
+          function parameters or table fields.
+          -->
+          <div class="member-descriptions">
+              <h2 class="section-header "><a name="Methods"></a>Methods</h2>
 
 
+              <!-- Document module -->
+
+              <!-- Document actual items -->
+                <div>
+                  <h3><span class="api-methods-icon"></span>Maid:new()</h3>
+                    <p>Returns a new Maid object</p>
+                  <p>
+
+
+                  <!-- Params -->
+
+                  <!-- returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <h3><span class="api-methods-icon"></span>Maid:GiveTask(Task)</h3>
+                    <p>Same as indexing, but uses an incremented number as a key.</p>
+                  <p>
+
+
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Task</span>
+                             An item to clean
+
+
+                          </li>
+                    </ul>
+
+                  <!-- returns -->
+                    <h4>Returns:</h4>
+                    <ol>
+                          <li>
+                            int TaskId
+                          </li>
+                    </ol>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <h3><span class="api-methods-icon"></span>Maid:DoCleaning()</h3>
+                    <p>Cleans up all tasks.</p>
+                  <p>
+
+
+                  <!-- Params -->
+
+                  <!-- returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <h3><span class="api-methods-icon"></span>Maid:Destroy()</h3>
+                    <p>Alias for DoCleaning()</p>
+                  <p>
+
+
+                  <!-- Params -->
+
+                  <!-- returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+              <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+
+
+              <!-- Document module -->
+
+              <!-- Document actual items -->
+                <div>
+                  <h3><span class="api-metamethods-icon"></span>Maid:__index(Index)</h3>
+                    <p>Returns Maid[key] if not part of Maid metatable</p>
+                  <p>
+
+
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Index</span>
 
 
 
 
 
-</dd>
-</dl>
-    <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+                          </li>
+                    </ul>
 
-    <dl class="function">
-    <dt>
-    <a name = "Maid:__index"></a>
-    <strong>Maid:__index (Index)</strong>
-    </dt>
-    <dd>
-    Returns Maid[key] if not part of Maid metatable
+                  <!-- returns -->
+                    <h4>Returns:</h4>
+                    <ol>
+                          <li>
+                            Maid[key] value
+                          </li>
+                    </ol>
+                  <!-- Raises -->
 
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Index</span>
+                  <!-- Item usage -->
 
 
-
-        </li>
-    </ul>
-
-    <h3>Returns:</h3>
-    <ol>
-
-        Maid[key] value
-    </ol>
+                </div>
+                <div>
+                  <h3><span class="api-metamethods-icon"></span>Maid:__newindex(Index, NewTask)</h3>
+                    <p>Add a task to clean up</p>
+                  <p>
 
 
-
-
-</dd>
-    <dt>
-    <a name = "Maid:__newindex"></a>
-    <strong>Maid:__newindex (Index, NewTask)</strong>
-    </dt>
-    <dd>
-    Add a task to clean up
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">Index</span>
-
-
-
-        </li>
-        <li><span class="parameter">NewTask</span>
-
-
-
-        </li>
-    </ul>
+                  <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Index</span>
 
 
 
 
-    <h3>Usage:</h3>
-    <ul>
-        <pre class="example">Maid[key] = (<span class="keyword">function</span>)            Adds a task to perform
+
+                          </li>
+                          <li>
+                            <span class="parameter">NewTask</span>
+
+
+
+
+
+                          </li>
+                    </ul>
+
+                  <!-- returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+                    <h4>Usage:</h3>
+                      <pre class="example">Maid[key] = (function)            Adds a task to perform
 Maid[key] = (event connection)    Manages an event connection
 Maid[key] = (Maid)                Maids can act as an event connection, allowing a Maid to have other maids to clean up.
-Maid[key] = (Object)              Maids can cleanup objects with a <span class="backtick"><a href="../classes/Maid.html#Maid:Destroy">Destroy</a></span> method
-Maid[key] = <span class="keyword">nil</span>                   Removes a named task. If the task is an event, it is disconnected. If it is an object, it is destroyed.</pre>
-    </ul>
-
-</dd>
-</dl>
+Maid[key] = (Object)              Maids can cleanup objects with a `Destroy` method
+Maid[key] = nil                   Removes a named task. If the task is an event, it is disconnected. If it is an object, it is destroyed.
+</pre>
 
 
-</div> <!-- id="content" -->
-</div> <!-- id="main" -->
-<div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2017-12-10 20:01:27 </i>
-</div> <!-- id="about" -->
-</div> <!-- id="container" -->
-</body>
+                </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <ul>
+          <li><a href="/api">Main</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://www.roblox.com/">Roblox</a></li>
+        </ul>
+      </div>
+      <span>Style is totally not a blatant <a href="http://qt-project.org/">Qt Project</a> rip-off and <a href="https://anaminus.github.io/api">Anaminus API</a> ripoff</span>
+    </footer>
+  </body>
 </html>

@@ -1,143 +1,158 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<head>
-    <title>Nevermore Documentation</title>
-    <link rel="stylesheet" href="ldoc_fixed.css" type="text/css" />
-</head>
-<body>
 
-<div id="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nevermore Reference</title>
 
-<div id="product">
-	<div id="product_logo"></div>
-	<div id="product_name"><big><b></b></big></div>
-	<div id="product_description"></div>
-</div> <!-- id="product" -->
+    <!-- Bootstrap CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ -->    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+  </head>
+  <body>
+    <div class="ref-container">
+      <div class="ref-box">
+        <div class="header">
+            <h1><span class="api-hierarchy-icon"></span>Class Hierarchy</h1>
+          <span class="header-items">
+<!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
+ -->            <a id="return-link" href="/api">Back to hierarchy<span class="api-hierarchy-icon"></span></a>
+          </span>
+        </div>
+          <div class="box-content">
+              <h2>Nevemore Roblux Lua Libraries</h2>
+              <p>Nevermore is a ModuleScript loader for Roblox, and loads modules by name. Nevermore is designed to make code more portable. Nevermore comes with a variety of utility libraries. These libraries are used on both the client and server and are useful for a variety of things. </p>
+              <h2>Modules</h2>
+              <ul>
+                  <li>
+                    <span class="api-modules-icon"></span>
+                    <a href="modules/Nevermore.html">Nevermore</a>
+                      <small>&mdash;
+                        Nevermore module loader.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-modules-icon"></span>
+                    <a href="modules/CharacterUtil.html">CharacterUtil</a>
+                      <small>&mdash;
+                        General character utility code.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-modules-icon"></span>
+                    <a href="modules/DataStoreRetry.html">DataStoreRetry</a>
+                      <small>&mdash;
+                        General usage datastore retry function.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-modules-icon"></span>
+                    <a href="modules/CameraStack.html">CameraStack</a>
+                      <small>&mdash;
+                        Holds camera states and allows for the last camera state to be retrieved.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-modules-icon"></span>
+                    <a href="modules/Table.html">Table</a>
+                      <small>&mdash;
+                        Provide a variety of utility Table operations
+                      </small>
+                  </li>
+              </ul>
+              <h2>Classes</h2>
+              <ul>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/Maid.html">Maid</a>
+                      <small>&mdash;
+                        Manages the cleaning of events and other things.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/Promise.html">Promise</a>
+                      <small>&mdash;
+                        Promises, but without error handling as this screws with stack traces, using Roblox signals
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/Signal.html">Signal</a>
+                      <small>&mdash;
+                        Lua-side duplication of the API of events on Roblox objects.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/AnimationPlayer.html">AnimationPlayer</a>
+                      <small>&mdash;
+                        Makes playing and loading tracks into a humanoid easy
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/ClipCharacters.html">ClipCharacters</a>
+                      <small>&mdash;
+                        Clip characters locally on the client of other clients so they don't interfer with physics.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/CameraState.html">CameraState</a>
+                      <small>&mdash;
+                        Data container for the state of a camera.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/CameraStateTweener.html">CameraStateTweener</a>
+                      <small>&mdash;
+                        Makes transitions between states easier.
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/CameraControls.html">CameraControls</a>
+                      <small>&mdash;
+                        Interface between user input and camera controls
+                      </small>
+                  </li>
+                  <li>
+                    <span class="api-classes-icon"></span>
+                    <a href="classes/ValueObject.html">ValueObject</a>
+                      <small>&mdash;
+                        To work like value objects in ROBLOX and track a single item,
+ with <code>.Changed</code> events
+                      </small>
+                  </li>
+              </ul>
+              <h2>Topics</h2>
+              <ul>
+                  <li>
+                    <span class="api-topics-icon"></span>
+                    <a href="topics/01_adding_modules.md.html">01_adding_modules.md</a>
+                  </li>
+                  <li>
+                    <span class="api-topics-icon"></span>
+                    <a href="topics/02_usage.md.html">02_usage.md</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-<div id="main">
-
-
-<!-- Menu -->
-
-<div id="navigation">
-<br/>
-<h1>Nevermore</h1>
-
-
-
-
-<h2>Modules</h2>
-<ul class="nowrap">
-  <li><a href="modules/Promise.html">Promise</a></li>
-  <li><a href="modules/Nevermore.html">Nevermore</a></li>
-  <li><a href="modules/CharacterUtil.html">CharacterUtil</a></li>
-  <li><a href="modules/DataStoreRetry.html">DataStoreRetry</a></li>
-  <li><a href="modules/CameraStack.html">CameraStack</a></li>
-  <li><a href="modules/Table.html">Table</a></li>
-</ul>
-<h2>Classes</h2>
-<ul class="nowrap">
-  <li><a href="classes/Maid.html">Maid</a></li>
-  <li><a href="classes/Signal.html">Signal</a></li>
-  <li><a href="classes/AnimationPlayer.html">AnimationPlayer</a></li>
-  <li><a href="classes/ClipCharacters.html">ClipCharacters</a></li>
-  <li><a href="classes/CameraState.html">CameraState</a></li>
-  <li><a href="classes/CameraStateTweener.html">CameraStateTweener</a></li>
-  <li><a href="classes/ValueObject.html">ValueObject</a></li>
-</ul>
-<h2>Topics</h2>
-<ul class="">
-  <li><a href="topics/01_adding_modules.md.html">Adding modules</a></li>
-  <li><a href="topics/02_usage.md.html">Usage</a></li>
-</ul>
-
-</div>
-
-<div id="content">
-
-
-  <h2>Nevemore Roblux Lua Libraries</h2>
-
-<h2>Modules</h2>
-<table class="module_list">
-	<tr>
-		<td class="name"  nowrap><a href="modules/Promise.html">Promise</a></td>
-		<td class="summary">Promises, but without error handling as this screws with stack traces, using Roblox signals</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="modules/Nevermore.html">Nevermore</a></td>
-		<td class="summary">Nevermore module loader.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="modules/CharacterUtil.html">CharacterUtil</a></td>
-		<td class="summary">General character utility code.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="modules/DataStoreRetry.html">DataStoreRetry</a></td>
-		<td class="summary">General usage datastore retry function.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="modules/CameraStack.html">CameraStack</a></td>
-		<td class="summary">Holds camera states and allows for the last camera state to be retrieved.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="modules/Table.html">Table</a></td>
-		<td class="summary">Provide a variety of utility Table operations</td>
-	</tr>
-</table>
-<h2>Classes</h2>
-<table class="module_list">
-	<tr>
-		<td class="name"  nowrap><a href="classes/Maid.html">Maid</a></td>
-		<td class="summary">Manages the cleaning of events and other things.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/Signal.html">Signal</a></td>
-		<td class="summary">Lua-side duplication of the API of events on Roblox objects.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/AnimationPlayer.html">AnimationPlayer</a></td>
-		<td class="summary">Makes playing and loading tracks into a humanoid easy</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/ClipCharacters.html">ClipCharacters</a></td>
-		<td class="summary">Clip characters locally on the client of other clients so they don't interfer with physics.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/CameraState.html">CameraState</a></td>
-		<td class="summary">Data container for the state of a camera.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/CameraStateTweener.html">CameraStateTweener</a></td>
-		<td class="summary">Makes transitions between states easier.</td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="classes/ValueObject.html">ValueObject</a></td>
-		<td class="summary">To work like value objects in ROBLOX and track a single item,
- with <code>.Changed</code> events</td>
-	</tr>
-</table>
-<h2>Topics</h2>
-<table class="module_list">
-	<tr>
-		<td class="name"  nowrap><a href="topics/01_adding_modules.md.html">01_adding_modules.md</a></td>
-		<td class="summary"></td>
-	</tr>
-	<tr>
-		<td class="name"  nowrap><a href="topics/02_usage.md.html">02_usage.md</a></td>
-		<td class="summary"></td>
-	</tr>
-</table>
-
-</div> <!-- id="content" -->
-</div> <!-- id="main" -->
-<div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2017-12-10 20:01:27 </i>
-</div> <!-- id="about" -->
-</div> <!-- id="container" -->
-</body>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="/api">Main</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://www.roblox.com/">Roblox</a></li>
+        </ul>
+      </div>
+      <span>Style is totally not a blatant <a href="http://qt-project.org/">Qt Project</a> rip-off and <a href="https://anaminus.github.io/api">Anaminus API</a> ripoff</span>
+    </footer>
+  </body>
 </html>

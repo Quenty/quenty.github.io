@@ -14,15 +14,14 @@
     <div class="ref-container">
       <div class="ref-box">
         <div class="header">
-            <h1><span class="api-class-icon"></span>ValueObject</h1>
+            <h1><span class="api-class-icon"></span>Promise</h1>
           <span class="header-items">
 <!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
  -->            <a id="return-link" href="/api">Back to hierarchy<span class="api-hierarchy-icon"></span></a>
           </span>
         </div>
           <div class="box-content">
-            <p>To work like value objects in ROBLOX and track a single item,
- with <code>.Changed</code> events</p>
+            <p>Promises, but without error handling as this screws with stack traces, using Roblox signals</p>
             <p>
 
 </p>
@@ -33,32 +32,24 @@
 
 
             <!-- Summary -->
-                <h4>Events</h4>
+                <h4>Methods</h4>
                 <table>
                   <tr>
                     <th></th>
-                    <th>Events</th>
+                    <th>Methods</th>
                     <th>Description</th>
                   </tr>
                     <tr>
-                      <td class="col-icon"><span class="api-events-icon"></span></td>
-                      <td class="api-member-name"><a href="#ValueObject.Changed">ValueObject.Changed</a></td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Promise:Promisify">Promise:Promisify(Value)</a></td>
                       </td>
-                      <td class="api-summary">Event fires when the value's object value change</td>
+                      <td class="api-summary">Modifies values into promises</td>
                     </tr>
-                </table>
-                <h4>Properties</h4>
-                <table>
-                  <tr>
-                    <th></th>
-                    <th>Properties</th>
-                    <th>Description</th>
-                  </tr>
                     <tr>
-                      <td class="col-icon"><span class="api-properties-icon"></span></td>
-                      <td class="api-member-name"><a href="#ValueObject.Value">ValueObject.Value</a></td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="api-member-name"><a href="#Promise:Resolve">Promise:Resolve(Value)</a></td>
                       </td>
-                      <td class="api-summary">The value of the ValueObject</td>
+                      <td class="api-summary">Resolves a promise</td>
                     </tr>
                 </table>
 
@@ -67,30 +58,26 @@
           function parameters or table fields.
           -->
           <div class="member-descriptions">
-              <h2 class="section-header "><a name="Events"></a>Events</h2>
+              <h2 class="section-header "><a name="Methods"></a>Methods</h2>
 
 
               <!-- Document module -->
 
               <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-events-icon"></span>ValueObject.Changed</h3>
-                    <p>Event fires when the value's object value change</p>
+                  <h3><span class="api-methods-icon"></span>Promise:Promisify(Value)</h3>
+                    <p>Modifies values into promises</p>
                   <p>
 
 
                   <!-- Params -->
-                      <h4>Params:</h4>
+                      <h4>Parameters:</h4>
                     <ul>
                           <li>
-                            <span class="parameter">NewValue</span>
-                             The new value
+                            <span class="parameter">Value</span>
 
 
-                          </li>
-                          <li>
-                            <span class="parameter">OldValue</span>
-                             The old value
+
 
 
                           </li>
@@ -103,19 +90,24 @@
 
 
                 </div>
-              <h2 class="section-header "><a name="Properties"></a>Properties</h2>
-
-
-              <!-- Document module -->
-
-              <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-properties-icon"></span>ValueObject.Value</h3>
-                    <p>The value of the ValueObject</p>
+                  <h3><span class="api-methods-icon"></span>Promise:Resolve(Value)</h3>
+                    <p>Resolves a promise</p>
                   <p>
 
 
                   <!-- Params -->
+                      <h4>Parameters:</h4>
+                    <ul>
+                          <li>
+                            <span class="parameter">Value</span>
+
+
+
+
+
+                          </li>
+                    </ul>
 
                   <!-- returns -->
                   <!-- Raises -->

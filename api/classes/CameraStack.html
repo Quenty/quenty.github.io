@@ -14,19 +14,19 @@
     <div class="ref-container">
       <div class="ref-box">
         <div class="header">
-            <h1><span class="api-class-icon"></span>Promise</h1>
+            <h1><span class="api-class-icon"></span>CameraStack</h1>
           <span class="header-items">
 <!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
  -->            <a id="return-link" href="/api">Back to reference<span class="api-hierarchy-icon"></span></a>
           </span>
         </div>
           <div class="box-content">
-            <div id="info">
             <p>
-              Promises, but without error handling as this screws with stack traces, using Roblox signals
+              Holds camera states and allows for the last camera state to be retrieved.
             </p>
             <p>
-               See: https://promisesaplus.com/
+               Also
+ initializes an impulse and default camera as the bottom of the stack. Is a singleton.
             </p>
 
             <!-- Module see -->
@@ -46,92 +46,19 @@
                   </tr>
                     <tr>
                         <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/CameraStack.html#">CameraStack</a></a></span>
                         </td>
                       <td class="col-icon"><span class="api-functions-icon"></span></td>
                       <td class="col-name">
-                        <a class="api-member-name" href="#Promise.new">Promise.new</a>
+                        <a class="api-member-name" href="#CameraStack.new">CameraStack.new</a>
                           <span class="api-arguments">
                             ( <!--
-                              --><span class="api-argument">
-
-
-                                  <span class="api-argument-name">Value</span><!--
-                              --></span><!--
                             --> )
                           </span>
                       </td>
 
                       <!-- Properties / Fields type -->
-                      <td class="api-summary">Construct a new promise</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise.First">Promise.First</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-                                    <span class="api-value-type"><a href=""><span class="type">Array(Promise)</span></a></span>
-
-                                  <span class="api-argument-name">Promises</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">Returns the value of the first promise resolved</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise.Promisfy">Promise.Promisfy</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-
-                                  <span class="api-argument-name">Function</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">
-
-</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise.All">Promise.All</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-
-                                  <span class="api-argument-name">Promises</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">
-
-</td>
+                      <td class="api-summary">Makes a new camera stack</td>
                     </tr>
                 </table>
                 <h3>Methods</h3>
@@ -145,11 +72,11 @@
                   </tr>
                     <tr>
                         <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><span class="type">bool</span></a></span>
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
                         </td>
                       <td class="col-icon"><span class="api-methods-icon"></span></td>
                       <td class="col-name">
-                        <a class="api-member-name" href="#Promise:IsPending">Promise:IsPending</a>
+                        <a class="api-member-name" href="#CameraStack:PrintCameraStack">CameraStack:PrintCameraStack</a>
                           <span class="api-arguments">
                             ( <!--
                             --> )
@@ -157,7 +84,112 @@
                       </td>
 
                       <!-- Properties / Fields type -->
-                      <td class="api-summary">Returns whether or not the promise is pending</td>
+                      <td class="api-summary">Outputs the camera stack</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">SummedCamera</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetDefaultCamera">CameraStack:GetDefaultCamera</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Returns the default camera</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">ImpulseCamera</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetImpulseCamera">CameraStack:GetImpulseCamera</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Returns the impulse camera.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">DefaultCamera</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetRawDefaultCamera">CameraStack:GetRawDefaultCamera</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Returns the default camera without any impulse cameras</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/CameraState.html#">CameraState</a></a></span>
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetTopState">CameraStack:GetTopState</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Retrieves the top state off the stack</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">CustomCameraEffect</span></a></span>
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">NewStateToUse</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetNewStateBelow">CameraStack:GetNewStateBelow</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Returns a new camera state that retrieves the state below its set state</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">number</span></a></span>
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#CameraStack:GetIndex">CameraStack:GetIndex</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></span>
+
+                                  <span class="api-argument-name">State</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Retrieves the index of a state</td>
                     </tr>
                     <tr>
                         <td class="col-return-type">
@@ -165,20 +197,21 @@
                         </td>
                       <td class="col-icon"><span class="api-methods-icon"></span></td>
                       <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Resolve">Promise:Resolve</a>
+                        <a class="api-member-name" href="#CameraStack:Remove">CameraStack:Remove</a>
                           <span class="api-arguments">
                             ( <!--
                               --><span class="api-argument">
 
+                                    <span class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></span>
 
-                                  <span class="api-argument-name">Value</span><!--
+                                  <span class="api-argument-name">State</span><!--
                               --></span><!--
                             --> )
                           </span>
                       </td>
 
                       <!-- Properties / Fields type -->
-                      <td class="api-summary">Resolves a promise</td>
+                      <td class="api-summary">Removes the state from the stack</td>
                     </tr>
                     <tr>
                         <td class="col-return-type">
@@ -186,108 +219,21 @@
                         </td>
                       <td class="col-icon"><span class="api-methods-icon"></span></td>
                       <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Fulfill">Promise:Fulfill</a>
+                        <a class="api-member-name" href="#CameraStack:Add">CameraStack:Add</a>
                           <span class="api-arguments">
                             ( <!--
                               --><span class="api-argument">
 
+                                    <span class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></span>
 
-                                  <span class="api-argument-name">...</span><!--
+                                  <span class="api-argument-name">State</span><!--
                               --></span><!--
                             --> )
                           </span>
                       </td>
 
                       <!-- Properties / Fields type -->
-                      <td class="api-summary">Fulfills the promise with the value</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Reject">Promise:Reject</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-
-                                  <span class="api-argument-name">...</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">Rejects the promise with the value given</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Then">Promise:Then</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-                                    <span class="api-value-type"><a href=""><span class="type">function</span></a></span>
-
-                                  <span class="api-argument-name">OnFulfilled</span><!--
-                                   --> = <span class="api-value">nil</span><!--
-                              --></span><!--
-                              --><span class="api-argument">
-
-                                    <span class="api-value-type"><a href=""><span class="type">function</span></a></span>
-
-                                  <span class="api-argument-name">OnRejected</span><!--
-                                   --> = <span class="api-value">nil</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">Handlers when promise is fulfilled/rejected</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Catch">Promise:Catch</a>
-                          <span class="api-arguments">
-                            ( <!--
-                              --><span class="api-argument">
-
-
-                                  <span class="api-argument-name">Function</span><!--
-                              --></span><!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">Catch errors from the promise</td>
-                    </tr>
-                    <tr>
-                        <td class="col-return-type">
-                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
-                        </td>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="col-name">
-                        <a class="api-member-name" href="#Promise:Destroy">Promise:Destroy</a>
-                          <span class="api-arguments">
-                            ( <!--
-                            --> )
-                          </span>
-                      </td>
-
-                      <!-- Properties / Fields type -->
-                      <td class="api-summary">Rejects the current promise.</td>
+                      <td class="api-summary">Adds a state to the stack</td>
                     </tr>
                 </table>
 
@@ -308,7 +254,7 @@
                   <h3>
                     <!-- Return type -->
                       <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
+                                <span class="api-value-type"><a href=""><a class="type" href="../classes/CameraStack.html#">CameraStack</a></a></span>
                       </span>
 
                     <!-- Icon -->
@@ -316,207 +262,26 @@
 
                     <!-- Properties / Fields type -->
 
-                    Promise.new
+                    CameraStack.new
 
                       <span class="api-arguments">
                         ( <!--
-                          --><span class="api-argument">
-
-
-                              <span class="api-argument-name">Value</span><!--
-                          --></span><!--
                         --> )
                       </span>
                   </h3>
-                    <p>Construct a new promise Promise.new()</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                              <em>Value</em><!--
-                                -->:, default nil<!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-functions-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise.First
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-                                <a class="api-value-type" href=""><span class="type">Array(Promise)</span></a>
-
-                              <span class="api-argument-name">Promises</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>Returns the value of the first promise resolved First</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                                <a class="api-value-type" href="#"><span class="type">Array(Promise)</span></a>
-                              <em>Promises</em><!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
-                                  -->:<!--
-                              --></span>
-                            Promise that resolves with first result
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-functions-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise.Promisfy
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-
-                              <span class="api-argument-name">Function</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
+                    <p>Makes a new camera stack</p>
                     <p>
 
- First</p>
+</p>
 
                   <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                              <em>Function</em><!--
-                            --></span>
-                          </li>
-                    </ul>
 
                   <!-- Returns -->
                     <h4>Returns</h4>
                     <ul class="parameter-list">
                           <li>
                               <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-functions-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise.All
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-
-                              <span class="api-argument-name">Promises</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>
-
- First</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                              <em>Promises</em><!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
+                                <a href=""><a class="type" href="../classes/CameraStack.html#">CameraStack</a></a><!--
                               --></span>
 
 
@@ -541,7 +306,7 @@
                   <h3>
                     <!-- Return type -->
                       <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><span class="type">bool</span></a></span>
+                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
                       </span>
 
                     <!-- Icon -->
@@ -549,14 +314,15 @@
 
                     <!-- Properties / Fields type -->
 
-                    Promise:IsPending
+                    CameraStack:PrintCameraStack
 
                       <span class="api-arguments">
                         ( <!--
                         --> )
                       </span>
                   </h3>
-                    <p>Returns whether or not the promise is pending
+                    <p>Outputs the camera stack</p>
+                    <p>
 
 </p>
 
@@ -567,10 +333,323 @@
                     <ul class="parameter-list">
                           <li>
                               <span class="types">
-                                <a href=""><span class="type">bool</span></a><!--
+                                <a href=""><span class="type">nil</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">SummedCamera</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetDefaultCamera
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns the default camera</p>
+                    <p>
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">SummedCamera</span></a><!--
                                   -->:<!--
                               --></span>
-                            True if pending, false otherwise
+                            DefaultCamera + ImpulseCamera
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">ImpulseCamera</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetImpulseCamera
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns the impulse camera.</p>
+                    <p> Useful for adding camera shake</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">ImpulseCamera</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">DefaultCamera</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetRawDefaultCamera
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns the default camera without any impulse cameras</p>
+                    <p>
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">DefaultCamera</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></a></span>
+                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetTopState
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Retrieves the top state off the stack</p>
+                    <p>
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></a><!--
+                              --></span>
+
+
+
+                          </li>
+                         <h5>Or</h5>
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">nil</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">CustomCameraEffect</span></a></span>
+                                <span class="api-value-type"><a href=""><span class="type">NewStateToUse</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetNewStateBelow
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns a new camera state that retrieves the state below its set state</p>
+                    <p>
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">CustomCameraEffect</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">NewStateToUse</span></a><!--
+                              --></span>
+
+
+
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">number</span></a></span>
+                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    CameraStack:GetIndex
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
+
+                              <span class="api-argument-name">State</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Retrieves the index of a state</p>
+                    <p>
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
+                              <em>State</em>:
+
+
+
+                            </span>
+
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">number</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            Index of state
+                          </li>
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">nil</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            If non on stack
                           </li>
                     </ul>
                   <!-- Raises -->
@@ -592,19 +671,21 @@
 
                     <!-- Properties / Fields type -->
 
-                    Promise:Resolve
+                    CameraStack:Remove
 
                       <span class="api-arguments">
                         ( <!--
                           --><span class="api-argument">
 
+                                <a class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
 
-                              <span class="api-argument-name">Value</span><!--
+                              <span class="api-argument-name">State</span><!--
                           --></span><!--
                         --> )
                       </span>
                   </h3>
-                    <p>Resolves a promise
+                    <p>Removes the state from the stack</p>
+                    <p>
 
 </p>
 
@@ -613,8 +694,11 @@
                     <ul class="parameter-list">
                           <li>
                             <span class="parameter">
-                              <em>Value</em><!--
-                            --></span>
+                                <a class="api-value-type" href="#"><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
+                              <em>State</em>:
+                               State to remove
+                            </span>
+
                           </li>
                     </ul>
 
@@ -649,19 +733,21 @@
 
                     <!-- Properties / Fields type -->
 
-                    Promise:Fulfill
+                    CameraStack:Add
 
                       <span class="api-arguments">
                         ( <!--
                           --><span class="api-argument">
 
+                                <a class="api-value-type" href=""><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
 
-                              <span class="api-argument-name">...</span><!--
+                              <span class="api-argument-name">State</span><!--
                           --></span><!--
                         --> )
                       </span>
                   </h3>
-                    <p>Fulfills the promise with the value
+                    <p>Adds a state to the stack</p>
+                    <p>
 
 </p>
 
@@ -670,9 +756,11 @@
                     <ul class="parameter-list">
                           <li>
                             <span class="parameter">
-                              <em>...</em><!--
-                                -->: Params to fulfill with<!--
-                            --></span>
+                                <a class="api-value-type" href="#"><a class="type" href="../classes/CameraState.html#">CameraState</a></a>
+                              <em>State</em>:
+                               State to add
+                            </span>
+
                           </li>
                     </ul>
 
@@ -694,242 +782,6 @@
 
 
                 </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-methods-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise:Reject
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-
-                              <span class="api-argument-name">...</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>Rejects the promise with the value given
-
-</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                              <em>...</em><!--
-                                -->: Params to reject with<!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><span class="type">nil</span></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-methods-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise:Then
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-                                <a class="api-value-type" href=""><span class="type">function</span></a>
-
-                              <span class="api-argument-name">OnFulfilled</span><!--
-                               --> = <span class="api-value">nil</span><!--
-                          --></span><!--
-                          --><span class="api-argument">
-
-                                <a class="api-value-type" href=""><span class="type">function</span></a>
-
-                              <span class="api-argument-name">OnRejected</span><!--
-                               --> = <span class="api-value">nil</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>Handlers when promise is fulfilled/rejected
-
-</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                                <a class="api-value-type" href="#"><span class="type">function</span></a>
-                              <em>OnFulfilled</em><!--
-                                --> = nil<!--
-                                -->: Called when fulfilled with parameters<!--
-                            --></span>
-                          </li>
-                          <li>
-                            <span class="parameter">
-                                <a class="api-value-type" href="#"><span class="type">function</span></a>
-                              <em>OnRejected</em><!--
-                                --> = nil<!--
-                                -->: Called when rejected with parameters<!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-methods-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise:Catch
-
-                      <span class="api-arguments">
-                        ( <!--
-                          --><span class="api-argument">
-
-
-                              <span class="api-argument-name">Function</span><!--
-                          --></span><!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>Catch errors from the promise
-
-</p>
-
-                  <!-- Params -->
-                      <h4>Parameters</h4>
-                    <ul class="parameter-list">
-                          <li>
-                            <span class="parameter">
-                              <em>Function</em><!--
-                            --></span>
-                          </li>
-                    </ul>
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><a class="type" href="../classes/Promise.html#">Promise</a></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <!-- Title -->
-                  <h3>
-                    <!-- Return type -->
-                      <span class="col-return-type">
-                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
-                      </span>
-
-                    <!-- Icon -->
-                    <span class="api-methods-icon"></span>
-
-                    <!-- Properties / Fields type -->
-
-                    Promise:Destroy
-
-                      <span class="api-arguments">
-                        ( <!--
-                        --> )
-                      </span>
-                  </h3>
-                    <p>Rejects the current promise.
- Utility left for Maid task</p>
-
-                  <!-- Params -->
-
-                  <!-- Returns -->
-                    <h4>Returns</h4>
-                    <ul class="parameter-list">
-                          <li>
-                              <span class="types">
-                                <a href=""><span class="type">nil</span></a><!--
-                              --></span>
-
-
-
-                          </li>
-                    </ul>
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-            </div>
 
           </div>
         </div>

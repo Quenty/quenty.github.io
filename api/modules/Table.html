@@ -21,35 +21,293 @@
           </span>
         </div>
           <div class="box-content">
-            <p>Provide a variety of utility Table operations</p>
+            <div id="info">
+            <p>
+              Provide a variety of utility Table operations
+            </p>
             <p>
 
-</p>
+
+
+            </p>
 
             <!-- Module see -->
 
             <!-- Module usage -->
 
-
+            <h2>Members</h2>
             <!-- Summary -->
-                <h4>Functions</h4>
+                <h3>Functions</h3>
                 <table>
                   <tr>
+                    <!-- Function/Methods return types -->
+                      <th>Returns</th>
                     <th></th>
                     <th>Functions</th>
                     <th>Description</th>
                   </tr>
                     <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
                       <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="api-member-name"><a href="#lib.Append">lib.Append(Table, NewTable)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Append">lib.Append</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">target</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">source</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
-                      <td class="api-summary">Concats <a href="../modules/Table.html#">Table</a> with <code>NewTable</code></td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Concats <code>target</code> with <code>source</code></td>
                     </tr>
                     <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">number</span></a></span>
+                        </td>
                       <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="api-member-name"><a href="#lib.Count">lib.Count(Table)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Count">lib.Count</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">tab</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
-                      <td class="api-summary">Counts the number of items in the table.</td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Counts the number of items in <code>tab</code>.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Copy">lib.Copy</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">target</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Copies a table, but not deep.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.DeepCopy">lib.DeepCopy</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">table</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Deep copies a table including metatables</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.DeepOverwrite">lib.DeepOverwrite</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">target</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">source</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Overwrites a table's value</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">nil</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.GetIndexByValue">lib.GetIndexByValue</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">haystack</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">needle</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Gets an index by value, returning <code>nil</code> if no index is found.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Stringify">lib.Stringify</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">table</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><span class="type">number</span></a></span>
+
+                                  <span class="api-argument-name">indent</span><!--
+                                   --> = <span class="api-value">0</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a></span>
+
+                                  <span class="api-argument-name">output</span><!--
+                                   --> = <span class="api-value">""</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Recursively prints the table.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">boolean</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Contains">lib.Contains</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">table</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">value</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Returns whether <code>value</code> is within <a href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.Overwrite">lib.Overwrite</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">target</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">source</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Overwrites an existing table</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#lib.ErrorOnBadIndex">lib.ErrorOnBadIndex</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+                                    <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+
+                                  <span class="api-argument-name">table</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Sets a metatable on a table such that it errors when
+ indexing an undefined value</td>
                     </tr>
                 </table>
 
@@ -58,40 +316,79 @@
           function parameters or table fields.
           -->
           <div class="member-descriptions">
-              <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+              <h2 class="section-header "><a name="Functions"></a>Functions Descriptions</h2>
 
 
               <!-- Document module -->
 
               <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-functions-icon"></span>lib.Append(Table, NewTable)</h3>
-                    <p>Concats <a href="../modules/Table.html#">Table</a> with <code>NewTable</code></p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
 
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Append
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">target</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">source</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Concats <code>target</code> with <code>source</code>
+
+</p>
 
                   <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Table</span>
-
-
-
-
-
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>target</em><!--
+                                -->: Table to append to<!--
+                            --></span>
                           </li>
                           <li>
-                            <span class="parameter">NewTable</span>
-
-
-
-
-
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>source</em><!--
+                                -->: Table read from<!--
+                            --></span>
                           </li>
                     </ul>
 
-                  <!-- returns -->
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            parameter table
+                          </li>
+                    </ul>
                   <!-- Raises -->
 
                   <!-- Item usage -->
@@ -99,39 +396,615 @@
 
                 </div>
                 <div>
-                  <h3><span class="api-functions-icon"></span>lib.Count(Table)</h3>
-                    <p>Counts the number of items in the table.</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">number</span></a></span>
+                      </span>
 
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Count
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">tab</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Counts the number of items in <code>tab</code>.  Useful since <code>__len</code> on table in Lua 5.2 returns just the array length.</p>
 
                   <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Table</span>
-                              <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
-
-
-
-
-
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>tab</em><!--
+                                -->: Table to count<!--
+                            --></span>
                           </li>
                     </ul>
 
-                  <!-- returns -->
-                    <h4>Returns:</h4>
-                    <ol>
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
                           <li>
-                              <span class="types"><span class="type">number</span></span>
-                            Count
+                              <span class="types">
+                                <a href=""><span class="type">number</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            count
                           </li>
-                    </ol>
+                    </ul>
                   <!-- Raises -->
 
                   <!-- Item usage -->
 
 
                 </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Copy
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">target</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Copies a table, but not deep.
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>target</em><!--
+                                -->: Table to copy<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            New table
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.DeepCopy
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">table</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Deep copies a table including metatables
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>table</em><!--
+                                -->: Table to deep copy<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            New table
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.DeepOverwrite
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">target</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">source</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Overwrites a table's value
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>target</em><!--
+                                -->: Target table<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>source</em><!--
+                                -->: Table to read from<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            target
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">nil</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.GetIndexByValue
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">haystack</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">needle</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Gets an index by value, returning <code>nil</code> if no index is found.
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>haystack</em><!--
+                                -->: to search in<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                              <em>needle</em><!--
+                                -->: Value to search for<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            The index of the value, if found
+                          </li>
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">nil</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            if not found
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Stringify
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">table</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><span class="type">number</span></a>
+
+                              <span class="api-argument-name">indent</span><!--
+                               --> = <span class="api-value">0</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a>
+
+                              <span class="api-argument-name">output</span><!--
+                               --> = <span class="api-value">""</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Recursively prints the table.  Does not handle recursive tables.</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>table</em><!--
+                                -->: Table to stringify<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><span class="type">number</span></a>
+                              <em>indent</em><!--
+                                --> = 0<!--
+                                -->: Indent level<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a>
+                              <em>output</em><!--
+                                --> = ""<!--
+                                -->: Output string, used recursively<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            The table in string form
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">boolean</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Contains
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">table</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">value</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns whether <code>value</code> is within <a href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a>
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>table</em><!--
+                                -->: to search in for value<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                              <em>value</em><!--
+                                -->: Value to search for<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">boolean</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            <code>true</code> if within, <code>false</code> otherwise
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.Overwrite
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">target</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">source</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Overwrites an existing table
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>target</em><!--
+                                -->: Table to overwite<!--
+                            --></span>
+                          </li>
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>source</em><!--
+                                -->: Source table to read from<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            target
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    lib.ErrorOnBadIndex
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+                                <a class="api-value-type" href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+
+                              <span class="api-argument-name">table</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Sets a metatable on a table such that it errors when
+ indexing an undefined value
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                                <a class="api-value-type" href="#"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a>
+                              <em>table</em><!--
+                                -->: Table to error on indexing<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></a><!--
+                                  -->:<!--
+                              --></span>
+                            table The same table
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+            </div>
 
           </div>
         </div>
@@ -142,7 +1015,7 @@
       <div>
         <ul>
           <li><a href="/api">Main</a></li>
-          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Source</a></li>
           <li><a href="https://www.roblox.com/">Roblox</a></li>
         </ul>
       </div>

@@ -1,6 +1,7 @@
 body {
     background-color : rgb(232,232,232);
     font             : 10pt/1.2 "Open Sans","Trebuchet MS","DejaVu Sans",Geneva,sans-serif;
+    overflow-y: scroll;
 }
 
 h1 {
@@ -19,7 +20,28 @@ h3 {
     font-weight : bold;
 }
 
+h4 {
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
 
+.parameter-list {
+    margin-top: 0.25em;
+}
+
+
+#info {
+    display       : table-cell;
+    width         : 100%;
+    padding-right : 1em;
+}
+
+#hierarchy-nav {
+    display     : table-cell;
+    margin      : 1em;
+    padding     : 0 1em;
+    border-left : 1px solid rgb(222,222,222);
+}
 
 
 
@@ -93,7 +115,9 @@ a {
 
 .ref-box {
     display          : inline-block;
-    width            : 900px;
+    width: 100%;
+    max-width        : 900px;
+    min-width: 500px;
     background-color : rgb(255,255,255);
     color            : rgb(65,85,65);
     text-align       : left;
@@ -127,9 +151,40 @@ a {
     margin-left  : 4px;
 }
 
+.col-name {
+    white-space: nowrap;
+}
+
+.api-arguments {
+    white-space: nowrap;
+}
+.api-arguments .api-argument:after {
+    content: ", ";
+}
+
+.api-arguments .api-argument:last-child:after {
+    content:"";
+}
+
+.api-argument {
+    white-space: nowrap;
+}
 
 
 
+
+.col-return-type .api-value-type:after  {
+    content: ", ";
+}
+
+.col-return-type .api-value-type:last-child:after  {
+    content: "";
+}
+
+
+/*.parameter {
+    white-space: nowrap;
+}*/
 
 footer {
     width            : 900px;
@@ -167,6 +222,11 @@ footer > *:first-child {
     width:100%;
 }
 
+.api-member-name,
+.api-enum-name {
+    font-weight : bold;
+    color       : rgb(65,85,65);
+}
 
 
 /* styles for prettification of source */
@@ -186,7 +246,9 @@ pre .prompt { color: #558817; }
 pre .url { color: #272fc2; text-decoration: underline; }
 
 pre {
-    overflow: auto;
+    white-space:pre-wrap;
+    max-width: 800px;
+    overflow-x:auto; 
 }
 
 
@@ -200,6 +262,11 @@ table .api-enum-item-icon {
     margin-right : 0px;
 }
 
+table .col-return-type {
+    text-align: right;
+}
+
+.api-fields-icon,
 .api-properties-icon,
 .api-events-icon,
 .api-metamethods-icon,
@@ -248,6 +315,7 @@ table .api-enum-item-icon {
     background-position : -160px;
 }
 
+.api-fields-icon,
 .api-properties-icon,
 .api-metamethods-icon {
     background-image : url('https://anaminus.github.io/api/img/icon-objectbrowser.png');

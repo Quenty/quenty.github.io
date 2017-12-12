@@ -21,34 +21,69 @@
           </span>
         </div>
           <div class="box-content">
-            <p>General character utility code.</p>
+            <div id="info">
+            <p>
+              General character utility code.
+            </p>
             <p>
 
-</p>
+
+
+            </p>
 
             <!-- Module see -->
 
             <!-- Module usage -->
 
-
+            <h2>Members</h2>
             <!-- Summary -->
-                <h4>Functions</h4>
+                <h3>Functions</h3>
                 <table>
                   <tr>
+                    <!-- Function/Methods return types -->
+                      <th>Returns</th>
                     <th></th>
                     <th>Functions</th>
                     <th>Description</th>
                   </tr>
                     <tr>
+                        <td class="col-return-type">
+                        </td>
                       <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="api-member-name"><a href="#GetHumanoid">GetHumanoid(Descendant)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#GetHumanoid">GetHumanoid</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">Descendant</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
+
+                      <!-- Properties / Fields type -->
                       <td class="api-summary">Retrieves a humanomid from a descendant (Players only).</td>
                     </tr>
                     <tr>
+                        <td class="col-return-type">
+                        </td>
                       <td class="col-icon"><span class="api-functions-icon"></span></td>
-                      <td class="api-member-name"><a href="#GetPlayerFromCharacter">GetPlayerFromCharacter(Descendant)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#GetPlayerFromCharacter">GetPlayerFromCharacter</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">Descendant</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
+
+                      <!-- Properties / Fields type -->
                       <td class="api-summary">Returns the Player and Character that a descendent is part of, if it is part of one.</td>
                     </tr>
                 </table>
@@ -58,42 +93,65 @@
           function parameters or table fields.
           -->
           <div class="member-descriptions">
-              <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+              <h2 class="section-header "><a name="Functions"></a>Functions Descriptions</h2>
 
 
               <!-- Document module -->
 
               <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-functions-icon"></span>GetHumanoid(Descendant)</h3>
-                    <p>Retrieves a humanomid from a descendant (Players only).</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    GetHumanoid
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
 
 
-                  <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
-                          <li>
-                            <span class="parameter">Descendant</span>
-                             The child you're searching up from. Really, this is for weapon scripts.
+                              <span class="api-argument-name">Descendant</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Retrieves a humanomid from a descendant (Players only).
 
-
-                          </li>
-                    </ul>
-
-                  <!-- returns -->
-                    <h4>Returns:</h4>
-                    <ol>
-                          <li>
-                             A humanoid in the parent structure if it can find it. Intended to be used in</p>
 <pre><code> workspace  only. Useful for weapon scripts, and all that, especially to work on non
  player targets. Will scan *up* to workspace . If workspace   has a humanoid in it, it
  won't find it.
 </code></pre>
 <p> Will work even if there are non-humanoid objects named "Humanoid" However, only works on
- objects named "Humanoid" (this is intentional)
+ objects named "Humanoid" (this is intentional)</p>
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                              <em>Descendant</em><!--
+                                -->: The child you're searching up from. Really, this is for weapon scripts.<!--
+                            --></span>
                           </li>
-                    </ol>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                             A humanoid in the parent structure if it can find it. Intended to be used in
+                          </li>
+                    </ul>
                   <!-- Raises -->
 
                   <!-- Item usage -->
@@ -101,35 +159,58 @@
 
                 </div>
                 <div>
-                  <h3><span class="api-functions-icon"></span>GetPlayerFromCharacter(Descendant)</h3>
-                    <p>Returns the Player and Character that a descendent is part of, if it is part of one.</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                      </span>
 
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    GetPlayerFromCharacter
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">Descendant</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns the Player and Character that a descendent is part of, if it is part of one.
+
+</p>
 
                   <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Descendant</span>
-                             A child of the potential character.
-
-
+                            <span class="parameter">
+                              <em>Descendant</em><!--
+                                -->: A child of the potential character.<!--
+                            --></span>
                           </li>
                     </ul>
 
-                  <!-- returns -->
-                    <h4>Returns:</h4>
-                    <ol>
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
                           <li>
                             The character found.
                           </li>
-                    </ol>
+                    </ul>
                   <!-- Raises -->
 
                   <!-- Item usage -->
 
 
                 </div>
+            </div>
 
           </div>
         </div>
@@ -140,7 +221,7 @@
       <div>
         <ul>
           <li><a href="/api">Main</a></li>
-          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Source</a></li>
           <li><a href="https://www.roblox.com/">Roblox</a></li>
         </ul>
       </div>

@@ -21,9 +21,14 @@
           </span>
         </div>
           <div class="box-content">
-            <p>Manages the cleaning of events and other things.</p>
+            <div id="info">
             <p>
- Useful for encapsulating state and make deconstructors easy</p>
+              Manages the cleaning of events and other things.
+            </p>
+            <p>
+
+ Useful for encapsulating state and make deconstructors easy
+            </p>
 
             <!-- Module see -->
               <h4>See also</h4>
@@ -33,58 +38,143 @@
 
             <!-- Module usage -->
 
-
+            <h2>Members</h2>
             <!-- Summary -->
-                <h4>Methods</h4>
+                <h3>Functions</h3>
                 <table>
                   <tr>
+                    <!-- Function/Methods return types -->
+                      <th>Returns</th>
                     <th></th>
-                    <th>Methods</th>
+                    <th>Functions</th>
                     <th>Description</th>
                   </tr>
                     <tr>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:new">Maid:new()</a></td>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><a class="type" href="../classes/Maid.html#">Maid</a></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-functions-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid.new">Maid.new</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
                       </td>
+
+                      <!-- Properties / Fields type -->
                       <td class="api-summary">Returns a new Maid object</td>
                     </tr>
-                    <tr>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:GiveTask">Maid:GiveTask(Task)</a></td>
-                      </td>
-                      <td class="api-summary">Same as indexing, but uses an incremented number as a key.</td>
-                    </tr>
-                    <tr>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:DoCleaning">Maid:DoCleaning()</a></td>
-                      </td>
-                      <td class="api-summary">Cleans up all tasks.</td>
-                    </tr>
-                    <tr>
-                      <td class="col-icon"><span class="api-methods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:Destroy">Maid:Destroy()</a></td>
-                      </td>
-                      <td class="api-summary">Alias for DoCleaning()</td>
-                    </tr>
                 </table>
-                <h4>Metamethods</h4>
+                <h3>Metamethods</h3>
                 <table>
                   <tr>
+                    <!-- Function/Methods return types -->
                     <th></th>
                     <th>Metamethods</th>
                     <th>Description</th>
                   </tr>
                     <tr>
                       <td class="col-icon"><span class="api-metamethods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:__index">Maid:__index(Index)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid:__index">Maid:__index</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">index</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
+
+                      <!-- Properties / Fields type -->
                       <td class="api-summary">Returns Maid[key] if not part of Maid metatable</td>
                     </tr>
                     <tr>
                       <td class="col-icon"><span class="api-metamethods-icon"></span></td>
-                      <td class="api-member-name"><a href="#Maid:__newindex">Maid:__newindex(Index, NewTask)</a></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid:__newindex">Maid:__newindex</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">index</span><!--
+                              --></span><!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">newTask</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
                       </td>
+
+                      <!-- Properties / Fields type -->
                       <td class="api-summary">Add a task to clean up</td>
+                    </tr>
+                </table>
+                <h3>Methods</h3>
+                <table>
+                  <tr>
+                    <!-- Function/Methods return types -->
+                      <th>Returns</th>
+                    <th></th>
+                    <th>Methods</th>
+                    <th>Description</th>
+                  </tr>
+                    <tr>
+                        <td class="col-return-type">
+                                  <span class="api-value-type" href=""><a href="#"><span class="type">number</span></a></span>
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid:GiveTask">Maid:GiveTask</a>
+                          <span class="api-arguments">
+                            ( <!--
+                              --><span class="api-argument">
+
+
+                                  <span class="api-argument-name">task</span><!--
+                              --></span><!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Same as indexing, but uses an incremented number as a key.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid:DoCleaning">Maid:DoCleaning</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Cleans up all tasks.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-return-type">
+                        </td>
+                      <td class="col-icon"><span class="api-methods-icon"></span></td>
+                      <td class="col-name">
+                        <a class="api-member-name" href="#Maid:Destroy">Maid:Destroy</a>
+                          <span class="api-arguments">
+                            ( <!--
+                            --> )
+                          </span>
+                      </td>
+
+                      <!-- Properties / Fields type -->
+                      <td class="api-summary">Alias for DoCleaning()</td>
                     </tr>
                 </table>
 
@@ -93,119 +183,105 @@
           function parameters or table fields.
           -->
           <div class="member-descriptions">
-              <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+              <h2 class="section-header "><a name="Functions"></a>Functions Descriptions</h2>
 
 
               <!-- Document module -->
 
               <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-methods-icon"></span>Maid:new()</h3>
-                    <p>Returns a new Maid object</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><a class="type" href="../classes/Maid.html#">Maid</a></a></span>
+                      </span>
 
+                    <!-- Icon -->
+                    <span class="api-functions-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid.new
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns a new Maid object Maid.new()</p>
 
                   <!-- Params -->
 
-                  <!-- returns -->
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <h3><span class="api-methods-icon"></span>Maid:GiveTask(Task)</h3>
-                    <p>Same as indexing, but uses an incremented number as a key.</p>
-                  <p>
-
-
-                  <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Task</span>
-                             An item to clean
+                              <span class="types">
+                                <a href=""><a class="type" href="../classes/Maid.html#">Maid</a></a><!--
+                              --></span>
+
 
 
                           </li>
                     </ul>
-
-                  <!-- returns -->
-                    <h4>Returns:</h4>
-                    <ol>
-                          <li>
-                            int TaskId
-                          </li>
-                    </ol>
                   <!-- Raises -->
 
                   <!-- Item usage -->
 
 
                 </div>
-                <div>
-                  <h3><span class="api-methods-icon"></span>Maid:DoCleaning()</h3>
-                    <p>Cleans up all tasks.</p>
-                  <p>
 
-
-                  <!-- Params -->
-
-                  <!-- returns -->
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-                <div>
-                  <h3><span class="api-methods-icon"></span>Maid:Destroy()</h3>
-                    <p>Alias for DoCleaning()</p>
-                  <p>
-
-
-                  <!-- Params -->
-
-                  <!-- returns -->
-                  <!-- Raises -->
-
-                  <!-- Item usage -->
-
-
-                </div>
-              <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+              <h2 class="section-header "><a name="Metamethods"></a>Metamethods Descriptions</h2>
 
 
               <!-- Document module -->
 
               <!-- Document actual items -->
                 <div>
-                  <h3><span class="api-metamethods-icon"></span>Maid:__index(Index)</h3>
-                    <p>Returns Maid[key] if not part of Maid metatable</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
 
+                    <!-- Icon -->
+                    <span class="api-metamethods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid:__index
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">index</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Returns Maid[key] if not part of Maid metatable
+
+</p>
 
                   <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Index</span>
-
-
-
-
-
+                            <span class="parameter">
+                              <em>index</em><!--
+                            --></span>
                           </li>
                     </ul>
 
-                  <!-- returns -->
-                    <h4>Returns:</h4>
-                    <ol>
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
                           <li>
                             Maid[key] value
                           </li>
-                    </ol>
+                    </ul>
                   <!-- Raises -->
 
                   <!-- Item usage -->
@@ -213,46 +289,196 @@
 
                 </div>
                 <div>
-                  <h3><span class="api-metamethods-icon"></span>Maid:__newindex(Index, NewTask)</h3>
-                    <p>Add a task to clean up</p>
-                  <p>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
 
+                    <!-- Icon -->
+                    <span class="api-metamethods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid:__newindex
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">index</span><!--
+                          --></span><!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">newTask</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Add a task to clean up
+
+</p>
 
                   <!-- Params -->
-                      <h4>Parameters:</h4>
-                    <ul>
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
                           <li>
-                            <span class="parameter">Index</span>
-
-
-
-
-
+                            <span class="parameter">
+                              <em>index</em><!--
+                            --></span>
                           </li>
                           <li>
-                            <span class="parameter">NewTask</span>
-
-
-
-
-
+                            <span class="parameter">
+                              <em>newTask</em><!--
+                            --></span>
                           </li>
                     </ul>
 
-                  <!-- returns -->
+                  <!-- Returns -->
                   <!-- Raises -->
 
                   <!-- Item usage -->
-                    <h4>Usage:</h3>
-                      <pre class="example">Maid[key] = (function)            Adds a task to perform
+                    <h4>Usage</h4>
+                    <div>
+                        <pre class="example">Maid[key] = (function)            Adds a task to perform
 Maid[key] = (event connection)    Manages an event connection
 Maid[key] = (Maid)                Maids can act as an event connection, allowing a Maid to have other maids to clean up.
 Maid[key] = (Object)              Maids can cleanup objects with a `Destroy` method
 Maid[key] = nil                   Removes a named task. If the task is an event, it is disconnected. If it is an object, it is destroyed.
 </pre>
+                    </div>
 
 
                 </div>
+
+              <h2 class="section-header "><a name="Methods"></a>Methods Descriptions</h2>
+
+
+              <!-- Document module -->
+
+              <!-- Document actual items -->
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                                <span class="api-value-type"><a href=""><span class="type">number</span></a></span>
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid:GiveTask
+
+                      <span class="api-arguments">
+                        ( <!--
+                          --><span class="api-argument">
+
+
+                              <span class="api-argument-name">task</span><!--
+                          --></span><!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Same as indexing, but uses an incremented number as a key.
+
+</p>
+
+                  <!-- Params -->
+                      <h4>Parameters</h4>
+                    <ul class="parameter-list">
+                          <li>
+                            <span class="parameter">
+                              <em>task</em><!--
+                                -->: An item to clean<!--
+                            --></span>
+                          </li>
+                    </ul>
+
+                  <!-- Returns -->
+                    <h4>Returns</h4>
+                    <ul class="parameter-list">
+                          <li>
+                              <span class="types">
+                                <a href=""><span class="type">number</span></a><!--
+                                  -->:<!--
+                              --></span>
+                            taskId
+                          </li>
+                    </ul>
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid:DoCleaning
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Cleans up all tasks.
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+                <div>
+                  <!-- Title -->
+                  <h3>
+                    <!-- Return type -->
+                      <span class="col-return-type">
+                      </span>
+
+                    <!-- Icon -->
+                    <span class="api-methods-icon"></span>
+
+                    <!-- Properties / Fields type -->
+
+                    Maid:Destroy
+
+                      <span class="api-arguments">
+                        ( <!--
+                        --> )
+                      </span>
+                  </h3>
+                    <p>Alias for DoCleaning()
+
+</p>
+
+                  <!-- Params -->
+
+                  <!-- Returns -->
+                  <!-- Raises -->
+
+                  <!-- Item usage -->
+
+
+                </div>
+            </div>
 
           </div>
         </div>
@@ -263,7 +489,7 @@ Maid[key] = nil                   Removes a named task. If the task is an event,
       <div>
         <ul>
           <li><a href="/api">Main</a></li>
-          <li><a href="https://github.com/Quenty/NevermoreEngine">Github</a></li>
+          <li><a href="https://github.com/Quenty/NevermoreEngine">Source</a></li>
           <li><a href="https://www.roblox.com/">Roblox</a></li>
         </ul>
       </div>

@@ -14,31 +14,35 @@
     <div class="ref-container">
       <div class="ref-box">
         <div class="header">
-            <h1><span class="api-example-icon"></span>snackbarclientmain.lua</h1>
+            <h1><span class="api-class-icon"></span>SmoothZoomedCamera</h1>
           <span class="header-items">
 <!--             <span id="search-form"><label>Search: <input id="search-input" type="text" placeholder="Class or Member"></label></span>
  -->            <a id="return-link" href="/api">Back to reference<span class="api-hierarchy-icon"></span></a>
           </span>
         </div>
           <div class="box-content">
-            <h2>snackbarclientmain.lua</h2>
-<pre>
-<span class="keyword">local</span> <span class="global">require</span> = <span class="global">require</span>(game:GetService(<span class="string">"ReplicatedStorage"</span>):WaitForChild(<span class="string">"NevermoreEngine"</span>))
+            <div id="info">
+            <p>
+              Allow freedom of movement around a current place, much like the classic script works now.
+            </p>
+            <p>
+               Not intended to be use with the current character script
+ Intended to be used with a SummedCamera, relative.
+            </p>
 
-<span class="keyword">local</span> Players = game:GetService(<span class="string">"Players"</span>)
-<span class="keyword">local</span> UserInputService = game:GetService(<span class="string">"UserInputService"</span>)
+            <!-- Module see -->
 
-<span class="comment">-- Load snackbar manager
-</span><span class="keyword">local</span> SnackbarManager = <span class="global">require</span>(<span class="string">"SnackbarManager"</span>).new()
-	:WithPlayerGui(Players.LocalPlayer:WaitForChild(<span class="string">"PlayerGui"</span>))
+            <!-- Module usage -->
 
-<span class="comment">-- Create snackbar
-</span>SnackbarManager:MakeSnackbar(<span class="string">"Nevermore loaded!"</span>)
+            <h2>Members</h2>
+            <!-- Summary -->
 
-<span class="comment">-- Show snackbar after every input!
-</span>UserInputService.InputBegan:Connect(<span class="keyword">function</span>()
-	SnackbarManager:MakeSnackbar(<span class="string">"New input happend!"</span>)
-<span class="keyword">end</span>)</pre>
+          <!-- Raw content -->
+          <!-- Currently works for both Functions and Tables. The params field either contains
+          function parameters or table fields.
+          -->
+          <div class="member-descriptions">
+            </div>
 
           </div>
         </div>
